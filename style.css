@@ -4,13 +4,47 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
 .interior {
   margin: 0 auto;
   padding: 0 4%;
 }
 
+.interior__header {
+  margin-top: 50px;
+}
+
+.interior__header__title {
+  padding: 8px;
+  border: 1px solid #ffffff;
+  width: fit-content;
+}
+
+.interior__header__menus {
+  padding-left: 40%;
+}
+
+.interior__header__menu:not(:last-child) {
+  margin-right: 86px;
+}
+
+.interior__main__images {
+  margin-top: 145px;
+  position: relative;
+}
+
+.interior__main__images__twitter {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+}
+
 footer {
-  /* margin-top: 115px; */
+  margin-top: 115px;
   text-align: center;
   color: #a9a9a9;
   font-size: 14px;
