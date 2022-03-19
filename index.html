@@ -20,76 +20,57 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <title>Devchallenges - Interior Consultant</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="interior">
+      <div class="interior__header">
+        <div class="interior__header__title">This Interior</div>
+        <div class="interior__header__menus">
+          <div class="interior__header__menu">Home</div>
+          <div class="interior__header__menu">Collection</div>
+          <div class="interior__header__menu">About</div>
+          <div class="interior__header__menu">Contact</div>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="interior__main">
+        <div class="interior__main__explanation">
+          <p>Modern interior</p>
+          <div class="interior__main__explanation__sub">
+            A full-Service residential & commercial interior design and staging
+            company offering professional organizing & eco-services.
+          </div>
+          <div class="interior__main__explanation__button">Read more</div>
+        </div>
+        <div class="interior__main__images">
+          <img src="./images/photo1.png" alt="interior image" />
+          <div class="interior__main__images__twitter">
+            <div class="interior__main__images__twitter__user">
+              <img src="./images/photo2.png" alt="twitter user icon" />
+              <div class="interior__main__images__twitter__username">
+                <div class="interior__main__images__twitter__username__full">
+                  Aliza Webber
+                </div>
+                <div class="interior__main__images__twitter__job">
+                  Interior designer
+                </div>
+              </div>
+            </div>
+            <p>Designed in 2020 by Aliza Webber</p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        created by <span class="footer-user-name">miruoo</span> -
+        devChallenges.io
+      </footer>
     </div>
   </body>
 </html>

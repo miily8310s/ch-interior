@@ -1,0 +1,22 @@
+* {
+  color: #ffffff;
+  background: #181719;
+  font-family: "Montserrat", sans-serif;
+}
+
+.interior {
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+footer {
+  /* margin-top: 115px; */
+  text-align: center;
+  color: #a9a9a9;
+  font-size: 14px;
+}
+
+.footer-user-name {
+  font-size: inherit;
+  font-weight: 600;
+}
