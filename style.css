@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.hover {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
 .interior {
   margin: 0 auto;
   padding: 0 4%;
@@ -19,32 +24,93 @@
 }
 
 .interior__header__title {
+  font-family: "Crimson Pro", serif;
+  font-weight: 200;
+  font-size: 14px;
   padding: 8px;
   border: 1px solid #ffffff;
   width: fit-content;
+  min-width: 100px;
+  text-transform: uppercase;
 }
 
 .interior__header__menus {
   padding-left: 40%;
+  font-size: 18px;
 }
 
 .interior__header__menu:not(:last-child) {
   margin-right: 86px;
 }
 
+.interior__main__explanation {
+  max-width: 400px;
+  flex-grow: 1;
+  margin-top: 160px;
+}
+
+.interior__main__explanation__title {
+  font-size: 48px;
+  font-family: "Lora", serif;
+  margin-bottom: 48px;
+}
+
+.interior__main__explanation__sub {
+  font-size: 24px;
+}
+
+.interior__main__explanation__button {
+  display: flex;
+  margin-top: 48px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .interior__main__images {
   margin-top: 145px;
+  margin-left: 132px;
   position: relative;
 }
 
 .interior__main__images__twitter {
   position: absolute;
-  right: 10%;
-  bottom: -30%;
+  right: 5%;
+  bottom: -15%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 14px 0;
+}
+
+.interior__main__images__tweet {
+  font-weight: bold;
+  font-size: 24px;
+  max-width: 250px;
+  font-family: "Lora", serif;
+  padding: 11px 0 34px;
+}
+
+.interior__main__images__twitter__user {
+  display: flex;
+  align-items: center;
+}
+
+.interior__main__images__twitter__user > img {
+  border-radius: 50%;
+  width: 15%;
+  margin-right: 25px;
+}
+
+.interior__main__images__twitter__username__full {
+  font-size: 14px;
+}
+
+.interior__main__images__twitter__job {
+  font-size: 12px;
+  color: #828282;
+  margin-top: 8px;
 }
 
 footer {
-  margin-top: 115px;
+  margin-top: 215px;
   text-align: center;
   color: #a9a9a9;
   font-size: 14px;
