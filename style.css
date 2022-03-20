@@ -119,6 +119,30 @@ footer {
   font-weight: 600;
 }
 
+.interior__mobile {
+  display: none;
+  margin: 22px 20px 0;
+}
+
+#interior__header__open {
+  display: none;
+}
+
+#interior__mobile__close {
+  margin-left: 95%;
+}
+
+.interior__mobile__menus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 45% 0;
+}
+
+.interior__mobile__menu:not(:first-child) {
+  margin-top: 32px;
+}
+
 @media screen and (max-width: 767px) {
   .interior__header {
     justify-content: space-between;
@@ -127,6 +151,9 @@ footer {
     display: none;
   }
   .interior__header > span {
+    display: block;
+  }
+  #interior__header__open {
     display: block;
   }
   .interior__main {

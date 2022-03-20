@@ -38,11 +38,12 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
 
     <title>Devchallenges - Interior Consultant</title>
   </head>
   <body>
-    <div class="interior">
+    <div class="interior" id="interior-web-page">
       <div class="interior__header container">
         <div class="interior__header__title">This Interior</div>
         <div class="interior__header__menus container">
@@ -51,7 +52,9 @@
           <div class="interior__header__menu">About</div>
           <div class="interior__header__menu">Contact</div>
         </div>
-        <span class="material-icons"> view_list </span>
+        <button id="interior__header__open">
+          <span class="material-icons"> view_list </span>
+        </button>
       </div>
       <div class="interior__main container">
         <div class="interior__main__explanation">
@@ -88,6 +91,17 @@
         created by <span class="footer-user-name">miruoo</span> -
         devChallenges.io
       </footer>
+    </div>
+    <div class="interior__mobile" id="interior-mobile-page">
+      <button id="interior__mobile__close">
+        <span class="material-icons"> close </span>
+      </button>
+      <div class="interior__mobile__menus">
+        <div class="interior__mobile__menu hover">Home</div>
+        <div class="interior__mobile__menu">Collection</div>
+        <div class="interior__mobile__menu">About</div>
+        <div class="interior__mobile__menu">Contact</div>
+      </div>
     </div>
   </body>
 </html>
