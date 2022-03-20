@@ -16,17 +16,20 @@
 
 .interior {
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 4% 24px;
 }
 
 .interior__header {
   margin-top: 50px;
 }
 
+.interior__header > span {
+  display: none;
+}
+
 .interior__header__title {
   font-family: "Crimson Pro", serif;
   font-weight: 200;
-  font-size: 14px;
   padding: 8px;
   border: 1px solid #ffffff;
   width: fit-content;
@@ -99,10 +102,6 @@
   margin-right: 25px;
 }
 
-.interior__main__images__twitter__username__full {
-  font-size: 14px;
-}
-
 .interior__main__images__twitter__job {
   font-size: 12px;
   color: #828282;
@@ -113,10 +112,37 @@ footer {
   margin-top: 215px;
   text-align: center;
   color: #a9a9a9;
-  font-size: 14px;
 }
 
 .footer-user-name {
   font-size: inherit;
   font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .interior__header {
+    justify-content: space-between;
+  }
+  .interior__header__menus {
+    display: none;
+  }
+  .interior__header > span {
+    display: block;
+  }
+  .interior__main {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .interior__main__explanation {
+    margin-top: 38px;
+  }
+  .interior__main__images {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  footer {
+    margin-top: 120px;
+  }
 }
